@@ -1,0 +1,321 @@
+*{
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+/* .container{
+ 
+} */
+.container{
+    padding:10px;
+    background-color:rgb(44, 43, 43);
+}
+.box{
+    align-items:center;
+}
+.top_bar{
+    align-items:center;
+    display:flex;
+    justify-content:space-between;
+
+}
+
+ul li{
+    display:inline-block;
+    margin:0px 10px;
+    list-style-type:none;
+}
+ul li a{
+    color:gold;
+    font-weight:bolder;
+    text-decoration:none;
+    cursor:pointer;
+}
+ul li:hover::first-letter{
+    color:aqua;
+    font-size:20px;
+}
+.nav-btn{
+    padding:8px;
+    border-radius:5px;
+    cursor:pointer;
+    margin:0px 8px;
+    background-color:rgb(221, 23, 83);
+    color:white;
+}
+.nav-btn:hover{
+    font-size:15px;
+}
+nav h1 span{
+    font-size:30px;
+    font-weight:bolder;
+    color:rgb(243, 16, 53);
+}
+nav h1{
+        color:white;
+}
+nav h1:hover::first-line{
+    color:greenyellow;
+}
+
+/* home page */
+
+
+.main{
+    height:100vh;
+    background-image:url('images/chalkimg.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    align-items:center;
+    padding:10px;
+    text-align:center;
+    place-items:center;
+}
+.home{
+    margin-top:20vh;
+    align-items:center;
+    justify-content:center;
+    /* text-align:center; */
+}
+main div h1{
+    color:white;
+}
+main div h1 span{
+    color:magenta;
+    
+}
+.main-content h3::selection{
+    background-color:lightgreen;
+    color:black;
+}
+.main-content h1::selection{
+    background-color:red;
+    color:white;
+}
+.main-content h1 span::selection{
+    background-color:red;
+    color:white;
+}
+.main-content h3{
+    color:whitesmoke;
+}
+.btn-main{
+    margin:10px;
+    padding:10px;
+}
+.register{
+    margin:10px;
+    padding:15px;
+    cursor:pointer;
+    font-weight:bolder;
+    background:rgb(216, 44, 73);
+    color:white;
+    border-radius:5px;
+}
+.sign-in{
+    cursor:pointer;
+}
+.help{
+    margin:10px;
+    padding:15px;
+    font-weight:bolder;
+    background:rgb(15, 93, 236);
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+.study{
+    height:100vh;
+    width:100vw;
+    margin:10px;
+    padding:10px;
+    /* justify-content:center; */
+    /* place-items:center; */
+    /* margin-top:50%; */
+}
+.header{
+    height:15vh;
+    width:100vw;
+    background:black;
+    color:white;
+    font-size:40px;
+    padding:10px;
+}
+.links{
+    margin:20px;
+    padding:10px;
+}
+.display{
+    display:none;
+
+}
+.display.active{
+    display:block;
+}
+.form h2{
+    display:block;
+    text-align:center;
+}
+
+
+/* login page popup */
+
+
+.pop_up{
+    position:absolute;
+    width:60%;
+    height:60%;
+    padding:10px;
+    display:flex;
+    border-radius:10px;
+    background:white;
+    /* background:linear-gradient(to right,blue,skyblue); */
+    display:none;
+    left:-123%;
+    top:20%;
+    transition:left 0ms ease-in-out 200ms,
+        opacity 200ms ease-in 0ms,
+        transform 20ms ease-in-out 0ms;
+}
+.pop_up.active{
+    display:block;
+    left:23%;
+    transition:left 0ms ease-in-out 0ms,
+    opacity 200ms ease-in 0ms,
+    transform 20ms ease-in-out 0ms; 
+}
+.form{
+    width:100%;
+    padding:10px;
+    margin:10px;
+    position:relative;
+}
+.cut-login{
+    display:block;
+    text-align:right;
+    position:absolute;
+    right:2px;
+    top:1px;
+    margin:3px;
+    font-size:100%;
+    font-weight:bolder;
+    cursor:pointer;
+    background:red;
+    padding:5px;
+    color:white;
+}
+/* .cancel-login{
+    padding:5px;
+    border-radius:50%;
+    display:block;
+    text-align:right;
+    color:white;
+    cursor:pointer;
+    background:rgb(224, 11, 11);
+    /* position:absolute;
+    right:2px; */
+*/
+.forget{
+    display:block;
+    text-align:right;
+}
+.form-elements{
+    margin:5px 0px;
+    width:100%;
+    padding:5px;
+    font-size:15px;
+
+}
+input{
+    outline:none;
+    border:1px solid black;
+    padding:5px;
+    font-weight:bolder;
+    width:100%;
+}
+.forget{
+    font-size:14px;
+}
+#submit{
+    background:black;
+    padding:6px;
+    border-radius:6px;
+    color:white;
+    cursor:pointer;
+    font-weight:bolder;
+}
+#submit:hover{
+    background:rgb(5, 84, 158);
+}
+.check{
+    display:flex;
+    justify-content:left;
+    position:relative;
+    right:10px;
+}
+.check input{
+    color:black;
+    font-weight:bolder;
+    cursor:pointer;
+    width:12px;
+    margin:5px;
+}
+
+/* sign up */
+
+.pop-up2{
+    margin:1px;
+    position:absolute;
+    background:white;
+    width:65%;
+    height:80%;
+    left:23%;
+    display:none;
+    top:15%;
+    transition:1s;
+}
+.signup{
+    position:relative;
+    margin:5px;
+    padding:4px;
+}
+.cut-icon{
+    display:block;
+    text-align:right;
+    cursor:pointer;
+    transition:0.5s;
+}
+.signup h2{
+    display:block;
+    text-align:center;
+}
+.pass{
+    display:flex;
+    justify-content:space-between;
+    position:relative;
+}
+.icon{
+    cursor:pointer;
+    display:flex;
+}
+.hide{
+    position:absolute;
+    right:1px;
+}
+.pop-up2.active{
+    display:block;
+}
+/* .hide{
+    margin-bottom:4px;
+    padding:4px;
+} */
+/* .show,.hide{
+    display:none;
+}
+.show.active{
+    display:block;
+}
+.hide.active{
+    display:block;
+} */

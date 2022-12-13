@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Photo by <a href="https://unsplash.com/@sharonmccutcheon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Grey</a> on <a href="https://unsplash.com/s/photos/education?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+  
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <nav class="top_bar">
+                <h1><span>S</span>emester<span>H</span>ack</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#">Notes</a></li>
+                    <button class="nav-btn" onclick="display()">Login</button>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- login popup page -->
+    <div class="pop_up" >
+        <div class="form">
+            <div class="cut-login" onclick="Close()">&times;</div>
+            <h2>Log In</h2><br>
+            <div class="form-elements">
+                <label for="email" >Email</label> 
+                <input type="email" id="email" placeholder="Enter your Registered Email id">
+            </div>
+            <div class="form-elements">
+                <label for="password" >Password</label> 
+                <input type="password" id="password" placeholder="Enter your password ">
+            </div>
+            <div class="form-elements check">
+                <input type="checkbox" id="remember-me" >
+                <label for="remember-me">Save Password</label>
+            </div>
+            <div class="form-elements">
+                <input type="submit" id="submit" placeholder="Sign-In">
+            </div>
+            
+            <div class="form-elements forget" >
+                <a href="#">Forget Password</a>
+            </div>   
+        </div>
+    </div>
+
+    <!-- signup popup page -->
+    <div class="pop-up2">
+        <div class="signup">
+            <div class="cut-icon" onclick="closeSignup()">&#128683;</div>
+            <h2>Sign Up</h2>
+            <div class="form">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter The UserName" >
+
+            </div>
+            <div class="form">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter the Email " >
+                
+            </div>
+            <div class="form">
+                <div class="pass">
+                    <label for="password">Password</label>
+                    <div class="icon">
+                        <div class="hide" onclick="toggle1()">&#127763;</div>
+                        <!-- <div class="show" onclick="toggle2()">&#127765;</div> -->
+                    </div>
+                </div><br>
+                <input type="password" id="password" name="pass" placeholder="Enter password" >
+                
+            </div>
+            <div class="form">
+                <label for="Confirm">Confirm password</label>
+                <input type="text" id="confirm" placeholder="confirm password" >
+            </div>
+            <div class="form">
+                <input type="submit" id="submit" placeholder="Submit" >
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main" id="home">
+        <main class="home">
+            <div class="main-content">
+                <h1>Read <span>More</span> Get <span>More</span></h1>
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, nobis?</h3>
+            </div>
+
+            <br><br><br>
+            <div class="btn_main">
+                <button class="register sign-in" onclick="signup()">SignUp for free</button>
+                <button class="help">More Help</button>
+            </div>
+        </main>
+    </div><br><br>
+
+    <div class="study" id="education">
+        <div class="education">
+            <div class="header">Semester Notes</div>
+            <div class="links">
+                <p><a href="#sub" onclick="show1()">All Subjects </a> > <a href="#notes" onclick="show2()">Notes</a> > <a href="#papers" onclick="show3()">Previous Papers </a></p>
+            </div>
+            <div class="display" id="sub">
+                <P>subject Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id ullam vel eos! Cumque ipsum blanditiis repellendus earum voluptatem iusto amet nisi, animi iure dolorum officiis ipsa, facilis ut pariatur consectetur cum veniam modi, saepe repellat quia alias omnis aliquam? Aliquid distinctio sed voluptates, cum modi animi perferendis ducimus ipsam laudantium, atque eum iure in aspernatur asperiores possimus quasi nulla? Tempora enim commodi consectetur nesciunt nihil quaerat mollitia odit dolor! Nostrum quasi delectus sit quas dicta quod maiores eos officia facilis cumque. Fuga autem fugiat dolor in officia odit, doloribus, eligendi at tempore inventore quos dolorum repellendus laboriosam cumque, dolores porro!</P>
+                <br><br> <h4>Related Topics - <a href="" >Official Website AKU </a> | <a href="" >Official Website AKU </a> | <a href="" >Official Website AKU </a> | <a href="" >Official Website AKU </a> | <a href="" >Official Website AKU </a> | <a href="" >Official Website AKU </a> </h4>
+            </div>
+            <div class="display " id="notes">
+                <P>Notes Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id ullam vel eos! Cumque ipsum blanditiis repellendus earum voluptatem iusto amet nisi, animi iure dolorum officiis ipsa, facilis ut pariatur consectetur cum veniam modi, saepe repellat quia alias omnis aliquam? Aliquid distinctio sed voluptates, cum modi animi perferendis ducimus ipsam laudantium, atque eum iure in aspernatur asperiores possimus quasi nulla? Tempora enim commodi consectetur nesciunt nihil quaerat mollitia odit dolor! Nostrum quasi delectus sit quas dicta quod maiores eos officia facilis cumque. Fuga autem fugiat dolor in officia odit, doloribus, eligendi at tempore inventore quos dolorum repellendus laboriosam cumque, dolores porro!</P>
+                <br><br> <h4>Related Topics - <a href="" >Official Website AKU </a> | <a href="" >Official Website AKU </a> | <a href="" >Official Website AKU </a> | <a href="" >Official Website AKU </a> | <a href="" >Official Website AKU </a> | <a href="" >Official Website AKU </a> </h4>
+            </div>
+            <div class="display" id="papers">
+                <P>papers Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id ullam vel eos! Cumque ipsum blanditiis repellendus earum voluptatem iusto amet nisi, animi iure dolorum officiis ipsa, facilis ut pariatur consectetur cum veniam modi, saepe repellat quia alias omnis aliquam? Aliquid distinctio sed voluptates, cum modi animi perferendis ducimus ipsam laudantium, atque eum iure in aspernatur asperiores possimus quasi nulla? Tempora enim commodi consectetur nesciunt nihil quaerat mollitia odit dolor! Nostrum quasi delectus sit quas dicta quod maiores eos officia facilis cumque. Fuga autem fugiat dolor in officia odit, doloribus, eligendi at tempore inventore quos dolorum repellendus laboriosam cumque, dolores porro!</P>
+                <br><br> <h4>Related Topics - <a href="" >Official Website AKU </a> | <a href="" >Official Website AKU </a> | <a href="" >Official Website AKU </a> | <a href="" >Official Website AKU </a> | <a href="" >Official Website AKU </a> | <a href="" >Official Website AKU </a> </h4>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+<!-- <script>
+    const display=()=>{
+        console.log('hello');
+        document.querySelector('.pup_up').classList.add('active');
+    }
+    const close=()=>{
+        console.log("close");
+        document.querySelector('.pop_up').classList.remove('active');
+    }
+</script> -->
+</body>
+</html>
